@@ -10,9 +10,27 @@ type TStringBuilder = class
     constructor Create(aCapacity: Integer; aMaxCapacity: Integer); overload;
     constructor Create(const Value: string; aCapacity: Integer); overload;
     constructor Create(const Value: string; StartIndex: Integer; Length: Integer; aCapacity: Integer); overload;
-
     destructor Destroy; override;
 
+  private
+    fData : array of AnsiString;
+    fCapacity, fMaxCapacity, fLength : Integer;
+    function GetCapacity : Integer;
+    function GetMaxCapacity : Integer;
+    function GetLength : Integer;
+    function GetChar(const index : Integer) : char;
+    procedure SetCapacity(const Value : Integer);
+    procedure SetMaxCapacity(const Value : Integer);
+    procedure SetLength(const Value : Integer);
+    procedure SetChar(const index : Integer; const Value : char);
+
+  public
+    property Capacity: Integer read GetCapacity write SetCapacity;
+    property Chars[index: Integer]: Char read GetChar write SetChar; default;
+    property Length: Integer read GetLength write SetLength;
+    property MaxCapacity: Integer read GetMaxCapacity;
+
+  public
     function Append(const Value: AnsiString): TStringBuilder; overload;
     function Append(const Value: ShortString): TStringBuilder; overload;
 

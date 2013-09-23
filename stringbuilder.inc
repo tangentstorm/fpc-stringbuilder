@@ -39,6 +39,52 @@ destructor TStringBuilder.Destroy;
   end;
 
 
+function TStringBuilder.GetCapacity : Integer;
+  begin
+    result := fCapacity
+  end;
+
+
+function TStringBuilder.GetMaxCapacity : Integer;
+  begin
+    result := fMaxCapacity
+  end;
+
+
+function TStringBuilder.GetLength : Integer;
+  begin
+    result := fLength
+  end;
+
+
+procedure TStringBuilder.SetCapacity(const Value : Integer);
+  begin
+    fCapacity := Value
+  end;
+
+
+procedure TStringBuilder.SetMaxCapacity(const Value : Integer);
+  begin
+    fMaxCapacity := Value
+  end;
+
+
+procedure TStringBuilder.SetLength(const Value : Integer);
+  begin
+    fLength := Value
+  end;
+
+
+function TStringBuilder.GetChar(const index : Integer) : char;
+  begin
+  end;
+
+
+procedure TStringBuilder.SetChar(const index : Integer; const Value : char);
+  begin
+  end;
+
+
 function TStringBuilder.Append(const Value: ShortString): TStringBuilder;
   begin
     result := self
