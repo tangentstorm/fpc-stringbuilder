@@ -1,6 +1,12 @@
-The MIT License (MIT)
+fpc-stringbuilder
+Copyright (c) 2013 Michal J Wallace. < http://tangentstorm.com/ >
 
-Copyright (c) 2013 tangentstorm
+Available for use under (your choice of):
+ - MIT/X11 license
+ - FPC license (GNU LGPL with static linking allowance).
+
+
+The MIT License (MIT)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
@@ -18,3 +24,7 @@ FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
 COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
 IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
+For the FPC license, see:
+http://wiki.lazarus.freepascal.org/FPC_modified_LGPL
