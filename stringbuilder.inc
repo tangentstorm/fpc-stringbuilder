@@ -87,126 +87,127 @@ procedure TStringBuilder.SetChar(const index : Integer; const Value : char);
 
 function TStringBuilder.Append(const Value: ShortString): TStringBuilder;
   begin
-    result := self
+    result := self.Insert(self.Length, Value)
   end;
+
 
 function TStringBuilder.Append(const Value: AnsiString): TStringBuilder;
   begin
-    result := self
+    result := self.Insert(self.Length, Value)
   end;
 
 
 function TStringBuilder.Append(const Value: Boolean): TStringBuilder;
   begin
-    result := self
+    result := self.Insert(self.Length, Value)
   end;
 
 
 function TStringBuilder.Append(const Value: Byte): TStringBuilder;
   begin
-    result := self
+    result := self.Insert(self.Length, Value)
   end;
 
 
 function TStringBuilder.Append(const Value: Char): TStringBuilder;
   begin
-    result := self
+    result := self.Insert(self.Length, Value)
   end;
 
 
 function TStringBuilder.Append(const Value: Currency): TStringBuilder;
   begin
-    result := self
+    result := self.Insert(self.Length, Value)
   end;
 
 
 function TStringBuilder.Append(const Value: Double): TStringBuilder;
   begin
-    result := self
+    result := self.Insert(self.Length, Value)
   end;
 
 
 function TStringBuilder.Append(const Value: Smallint): TStringBuilder;
   begin
-    result := self
+    result := self.Insert(self.Length, Value)
   end;
 
 
 function TStringBuilder.Append(const Value: Integer): TStringBuilder;
   begin
-    result := self
+    result := self.Insert(self.Length, Value)
   end;
 
 
 function TStringBuilder.Append(const Value: Int64): TStringBuilder;
   begin
-    result := self
+    result := self.Insert(self.Length, Value)
   end;
 
 
 function TStringBuilder.Append(const Value: TObject): TStringBuilder;
   begin
-    result := self
+    result := self.Insert(self.Length, Value)
   end;
 
 
 function TStringBuilder.Append(const Value: Shortint): TStringBuilder;
   begin
-    result := self
+    result := self.Insert(self.Length, Value)
   end;
 
 
 function TStringBuilder.Append(const Value: Single): TStringBuilder;
   begin
-    result := self
+    result := self.Insert(self.Length, Value)
   end;
 
 
 function TStringBuilder.Append(const Value: UInt64): TStringBuilder;
   begin
-    result := self
+    result := self.Insert(self.Length, Value)
   end;
 
 
 function TStringBuilder.Append(const Value: TCharArray): TStringBuilder;
   begin
-    result := self
+    result := self.Insert(self.Length, Value)
   end;
 
 
 function TStringBuilder.Append(const Value: Word): TStringBuilder;
   begin
-    result := self
+    result := self.Insert(self.Length, Value)
   end;
 
 
 function TStringBuilder.Append(const Value: Cardinal): TStringBuilder;
   begin
-    result := self
+    result := self.Insert(self.Length, Value)
   end;
 
 
 function TStringBuilder.Append(const Value: PAnsiChar): TStringBuilder;
   begin
-    result := self
+    result := self.Insert(self.Length, Value)
   end;
 
 
 function TStringBuilder.Append(const Value: Char; RepeatCount: Integer): TStringBuilder;
   begin
-    result := self
+    result := self.Insert(self.Length, Value)
   end;
 
 
 function TStringBuilder.Append(const Value: TCharArray; StartIndex: Integer; CharCount: Integer): TStringBuilder;
   begin
-    result := self
+    result := self.Insert(self.Length, Value)
   end;
 
 
 function TStringBuilder.Append(const Value: string; StartIndex: Integer; Count: Integer): TStringBuilder;
   begin
-    result := self
+    result := self.Insert(self.Length, Value)
   end;
 
 
@@ -397,4 +398,3 @@ function TStringBuilder.ToString(StartIndex: Integer; StrLength: Integer): strin
   begin
     result := ''
   end;
-
